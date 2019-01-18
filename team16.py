@@ -17,10 +17,10 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-    if 'b' in their_history:
+    if 'b' in their_history: #If b is in their_history, It will always return with betray
         return 'b'
     else:
-        return 'c'
+        return 'c' #return with collude if b is not in their_history
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
